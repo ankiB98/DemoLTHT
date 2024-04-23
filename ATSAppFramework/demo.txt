@@ -1,0 +1,292 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    
+    <style>
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            width: 33.33%; /* Each column occupies one-third of the table width */
+            text-align: center; /* Center-align table headers */
+        }   
+        td {
+            text-align: center; /* Align text to the left within table data cells */
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="3">Overview</th>
+        </tr>
+        <tr>
+            <th>Network</th>
+            <th>ATA Used</th>
+            <th>Gateway</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="3"><strong>HT Panel</strong></td>
+        </tr>
+        <tr>
+            <td>Voltage</td>
+        </tr>
+        <tr>
+            <td>Current</td>
+        </tr>
+        <tr>
+            <td>Frequency</td>
+        </tr>
+        <tr>
+            <td>Temperature</td>
+        </tr>
+        <tr>
+            <td>ENV Temperature</td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Transformer Panel</strong></td>
+        </tr>
+        <tr>
+            <td>Voltage</td>
+        </tr>
+        <tr>
+            <td>Current</td>
+        </tr>
+        <tr>
+            <td>Frequency</td>
+        </tr>
+        <tr>
+            <td>Temperature</td>
+        </tr>
+        <tr>
+            <td>ENV Temperature</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    
+    <style>
+        /* Overall layout styles */
+        body {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        
+        /* Main content area (left side) */
+        main {
+            flex-grow: 1; /* Expand to fill available space */
+        }
+        
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 25px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td.left-align {
+            text-align: left;
+            padding: 15px;
+        }
+        
+        /* Sidebar styles (right side) */
+        aside {
+            width: 25%; /* Adjust as needed */
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        /* Date and time box */
+        #currentDateTime {
+            margin-bottom: 20px;
+        }
+        
+        /* Alarm alert box */
+        .alarm-alert {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #ffcccc;
+            border: 1px solid #ff0000;
+            color: #ff0000;
+            width: 100%; /* Adjust width as needed */
+        }
+        .alarm-alert-T {
+            margin-top: 200px;
+            padding: 10px;
+            background-color: #ffcccc;
+            border: 1px solid #ff0000;
+            color: #ff0000;
+            width: 100%; /* Adjust width as needed */
+        }
+        .alarm-alert-LT {
+            margin-top: 230px;
+            padding: 10px;
+            background-color: #ffcccc;
+            border: 1px solid #ff0000;
+            color: #ff0000;
+            width: 100%; /* Adjust width as needed */
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Overview</th>
+            </tr>
+            <tr>
+                <th>Network</th>
+                <th>ATA Used</th>
+                <th>Gateway</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3" style="text-align: center; padding: 15px; "><strong>HT Panel</strong></td>
+            </tr>
+            <tr>
+                <td class="left-align" colspan="3">Voltage</td>
+            </tr>
+            <tr>
+                <td class="left-align" colspan="3">Current</td>
+            </tr>
+            <tr>
+                <td class="left-align" colspan="3">Frequency</td>
+            </tr>
+            <tr>
+                <td class="left-align" colspan="3">Temperature</td>
+            </tr>
+            <tr>
+                <td class="left-align" colspan="3">ENV Temperature</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center;"><strong>Transformer Panel</strong></td>
+            </tr>
+            <tr>
+                <td class="left-align" colspan="3">Voltage</td>
+            </tr>
+            <tr>
+                <td class="left-align" colspan="3">Current</td>
+            </tr>
+            <tr>
+                <td class="left-align" colspan="3">Frequency</td>
+            </tr>
+            <tr>
+                <td class="left-align" colspan="3">Temperature</td>
+            </tr>
+            <tr>
+                <td class="left-align" colspan="3">ENV Temperature</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center;"><strong>L T Panel</strong></td>
+            </tr>
+            <tr>
+                <td class="left-align" colspan="3">Voltage</td>
+            </tr>
+            <tr>
+                <td class="left-align" colspan="3">Current</td>
+            </tr>
+            <tr>
+                <td class="left-align" colspan="3">Frequency</td>
+            </tr>
+            <tr>
+                <td class="left-align" colspan="3">Temperature</td>
+            </tr>
+            <tr>
+                <td class="left-align" colspan="3">ENV Temperature</td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+<!-- Sidebar with Date and Time -->
+<aside>
+    <div id="currentDateTime">
+        <strong>Current Date & Time:</strong>
+        <p></p>
+    </div>
+    
+    <!-- Alarm Alert for HT Panel -->
+    <div class="alarm-alert">
+        <strong>Alarm Alert - HT Panel</strong>
+        <p>Alarm triggered in HT Panel.</p>
+    </div>
+    
+    <!-- Alarm Alert for Transformer Panel -->
+    <div class="alarm-alert-T">
+        <strong>Alarm Alert - Transformer Panel</strong>
+        <p>Alarm triggered in Transformer Panel.</p>
+    </div>
+    
+    <!-- Alarm Alert for LT Panel -->
+    <div class="alarm-alert-LT">
+        <strong>Alarm Alert - LT Panel</strong>
+        <p>Alarm triggered in LT Panel.</p>
+    </div>
+</aside>
+
+<script>
+    // JavaScript to display current date and time
+    function updateDateTime() {
+        const now = new Date();
+        const dateTimeString = now.toLocaleString('en-US', { dateStyle: 'full', timeStyle: 'long' });
+        document.querySelector('#currentDateTime p').textContent = dateTimeString;
+    }
+
+    // Update date and time initially and every second
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+</script>
+
+</body>
+</html>
